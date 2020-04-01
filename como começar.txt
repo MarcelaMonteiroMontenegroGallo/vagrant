@@ -1,0 +1,26 @@
+ 
+Instalar 
+https://www.vagrantup.com/downloads.html
+
+alterar no Vagrantfile
+
+  # accessing "localhost:8080" will access port 80 on the guest machine.
+  # NOTE: This will enable public access to the opened port
+   config.vm.network "forwarded_port", guest: 8080, host: 8080
+
+   config.vm.provider "virtualbox" do |vb|
+  #   # Display the VirtualBox GUI when booting the machine
+  #   vb.gui = true
+
+  #   # Customize the amount of memory on the VM:
+     vb.memory = "2048"
+     end
+
+
+Comandos 
+
+vagrant init "ubuntu/trusty64"
+
+notepad  Vagrantfile
+
+Vagrantfile
