@@ -24,3 +24,5 @@ vagrant init "ubuntu/trusty64"
 notepad  Vagrantfile
 
 Vagrantfile
+Vagrant status
+Vagrant  ssh
